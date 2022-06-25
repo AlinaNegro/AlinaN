@@ -1,10 +1,85 @@
 body {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    font: 16px/24px Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
 }
 
+.header_name,
+footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100vw;
+    min-height: 15vh;
+    background-color: rgb(182, 182, 182)
+}
+
+.main_part {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch; 
+    width: 100vw;
+
+}
+
+.container_1 {
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 239, 186);
+    
+}
+
+.text {
+    width: 80vw;
+    height: 30vh;
+}
+
+.number_name {
+    display: flex;
+    flex-direction: row;
+}
+
+.number1_2 {
+    flex: 1;
+    width: 36vw;
+    height: 12vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: rgb(255, 244, 89);
+}
+
+.number_3 {
+    flex: 1;
+    width: 76vw;
+    margin: 2vw;
+    background-color: rgb(255, 244, 89);
+}
+
+aside {
+    width: 20vw;
+    background-color: #78d98b;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.footer4 {
+flex: 1;
+margin: 1vw;
+background-color: antiquewhite;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+
+}
